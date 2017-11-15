@@ -1,0 +1,294 @@
+@import "../fonts/fonts.css";
+@import "normalize.css";
+@import "grid.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #626262;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  display: block;
+}
+
+header {
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+
+  padding-top: 17px;
+  padding-bottom: 15px;
+  margin-bottom: 32px;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  white-space: nowrap;
+}
+
+.location input {
+  padding: 9px 12px 7px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  line-height: 24px;
+  font-size: 13px;
+  width: 272px;
+  margin-left: 2px;
+}
+
+.location button {
+  margin-right: 2px;
+}
+
+.button,
+button {
+  display: inline-block;
+  padding: 9px 12px 7px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.cart {
+  display: inline-block;
+  padding: 10px;
+}
+
+.sign_in {
+  margin-right: 16px;
+}
+
+.register {
+  background: #262626;
+  color: #ffffff;
+  border: 1px solid #262626;
+  margin-right: 16px;
+}
+
+.user button {
+  min-width: 80px;
+}
+
+.search {
+  width: 100%;
+  padding: 8px 8px 16px 30px;
+  line-height: 24px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+  background: url(../images/search.svg) 0 8px no-repeat;
+}
+
+h1 {
+  margin-top: 56px;
+  margin-bottom: 16px;
+  line-height: 34px;
+  font-size: 22px;
+  font-weight: normal;
+
+  color: #1d1d1d;
+}
+
+.card {
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.card:hover {
+  background: rgba(117, 117, 117, 0.04);
+}
+
+.card__photo {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.card__title {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #1d1d1d;
+}
+
+.card__desc {
+  line-height: 21px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #626262;
+}
+
+.card__time {
+  line-height: 21px;
+  font-size: 13px;
+  color: #1d1d1d;
+}
+
+.restaurants {
+  margin-bottom: 80px;
+}
+
+footer {
+  background: #262626;
+}
+
+.footer__logo,
+.footer__links,
+.footer__mobile-app {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer__logo {
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+.footer__links {
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.footer__mobile-app {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.language-select {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.language-select:after {
+  content: "";
+  display: block;
+  background: url(../images/select-chevron.svg) center no-repeat;
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 8px;
+}
+
+select {
+  border-radius: 2px;
+  padding: 12px 12px 12px 48px;
+  width: 100%;
+  border: none;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #3b3b3b url(../images/world.svg) 24px center no-repeat;
+  cursor: pointer;
+
+  /*for WebKit*/
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+nav a {
+  font-size: 13px;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 23px;
+}
+
+.hashtag {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.hashtag span {
+  color: #49a144;
+}
+
+.social a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.footer__mobile-app {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__mobile-app a {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.footer__mobile-app a:last-child {
+  margin-right: 0;
+}
+
+.footer__copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__copyright,
+.footer__copyright a {
+  font-size: 11px;
+  color: #ffffff;
+}
+
+.top-link {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 2px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: #59bd5a url(../images/arrow.svg) center no-repeat;
+}
