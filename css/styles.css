@@ -16,6 +16,7 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #626262;
+  overflow-x: hidden;
 }
 
 a {
@@ -42,7 +43,14 @@ header .inner {
 }
 
 .location {
-  white-space: nowrap;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .location {
+    display: block;
+    white-space: nowrap;
+  }
 }
 
 .location input {
@@ -82,8 +90,15 @@ button {
 }
 
 .cart {
-  display: inline-block;
-  padding: 10px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cart {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 16px;
+  }
 }
 
 .sign_in {
@@ -94,7 +109,6 @@ button {
   background: #262626;
   color: #ffffff;
   border: 1px solid #262626;
-  margin-right: 16px;
 }
 
 .user button {
@@ -291,4 +305,16 @@ nav a {
   right: 16px;
   bottom: 24px;
   background: #59bd5a url(../images/arrow.svg) center no-repeat;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }
